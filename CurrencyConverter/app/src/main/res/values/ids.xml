@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="UK" type="id">GBP</item>
+    <item name="EUR" type="id">EURO</item>
+    <item name="JAPAN" type="id">YEN</item>
+    <item name="BRAZIL" type="id">BRL</item>
+</resources>

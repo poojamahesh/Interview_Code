@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal|bottom"
+         />
+<TextView
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="USD:"/>
+
+
+
+
+    <EditText
+        android:id="@+id/editTextUSDLR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBaseline="@+id/textViewGBP"
+        android:layout_alignBottom="@+id/textViewGBP"
+        android:layout_toRightOf="@+id/textViewGBP"
+        android:inputType="number">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewGBP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUSDLR"
+        android:text="GBP: 0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="70dp" />
+
+    <TextView
+        android:id="@+id/textViewJPY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewEURO"
+        android:text="JPY: 0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/textViewBRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewJPY"
+        android:text="BRL: 0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="-35dp" />
+
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONVERT !"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:id="@+id/textViewEURO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewGBP"
+        android:text="EURO: 0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="150dp"
+        android:layout_gravity="left|center_vertical" />
+
+
+</FrameLayout>
